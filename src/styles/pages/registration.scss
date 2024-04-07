@@ -1,0 +1,31 @@
+@import '../vars.scss';
+
+.registration {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.panel {
+   max-width: 500px;
+   max-height: 550px;
+   margin-top: 40px;
+   box-shadow:
+      0px 4px 16px $boxShadow,
+      0px 4px 4px $boxShadow;
+   border-radius: 8px;
+   padding: 20px;
+}
+
+.panelContainer {
+   & > *:not(:last-child) {
+      margin-bottom: 15px;
+   }
+}
+
+.panelTitle {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 32px;
+}

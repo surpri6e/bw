@@ -1,1 +1,1 @@
-# bw
+write licence

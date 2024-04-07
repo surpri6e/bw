@@ -1,0 +1,115 @@
+@import '../../styles/vars.scss';
+
+.post {
+   width: 30%;
+   margin-bottom: 24px;
+   box-shadow:
+      0px 4px 16px $boxShadow,
+      0px 4px 4px $boxShadow;
+   padding-bottom: 20px;
+   border-radius: 8px;
+}
+
+.postContainer {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.postImage {
+   height: 134px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.postCreator {
+   margin-top: -50px;
+   display: flex;
+   align-items: center;
+   & > *:not(:last-child) {
+      margin-right: 10px;
+   }
+}
+
+.postCreatorAvatar {
+   & > img {
+      height: 56px;
+      width: 56px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      object-fit: cover;
+   }
+}
+
+.postCreatorName {
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+   color: #fff;
+}
+
+.postContent {
+   display: flex;
+   flex-direction: column;
+   & > *:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   margin-top: 10px;
+}
+
+.postTitle {
+   font-size: 20px;
+   font-weight: 700;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 28px;
+}
+
+.postButtons {
+   display: flex;
+   align-items: center;
+
+   & > *:not(:last-child) {
+      margin-right: 18px;
+   }
+
+   font-size: 16px;
+   color: $purple;
+   font-family: 'Roboto', sans-serif;
+}
+
+.postButtonsRead {
+   padding: 8px 20px;
+   border: 1px solid $purple;
+   border-radius: 4px;
+   transition: all 100ms ease-in;
+   position: relative;
+   z-index: 100;
+
+   &:before {
+      content: '';
+      height: 0px;
+      width: 100%;
+      transition: all 100ms ease-in;
+      background-color: $purple;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+   }
+
+   &:hover {
+      color: #fff;
+      &:before {
+         height: 100%;
+      }
+   }
+}
+
+@media (max-width: 800px) {
+   .post {
+      width: 45%;
+   }
+}
+@media (max-width: 500px) {
+   .post {
+      width: 90%;
+   }
+}

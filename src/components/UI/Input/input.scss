@@ -1,0 +1,24 @@
+@import '../../../styles/vars.scss';
+
+.customInput {
+   height: 51px;
+   width: 100%;
+   box-shadow:
+      0px 4px 16px $boxShadow,
+      0px 4px 4px $boxShadow;
+   padding-left: 45px;
+   padding-right: 45px;
+   border-radius: 4px;
+   border: none;
+   outline: none;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   position: relative;
+   transition: all 150ms ease-in;
+
+   &:focus {
+      box-shadow:
+         0px 4px 16px rgba($boxShadow, 0.15),
+         0px 4px 4px rgba($boxShadow, 0.12);
+   }
+}

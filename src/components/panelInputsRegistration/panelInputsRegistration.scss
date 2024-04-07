@@ -1,0 +1,49 @@
+@import '../../styles/vars.scss';
+
+.panelInputsRegistration {
+   & > *:not(:last-child) {
+      margin-bottom: 20px;
+   }
+}
+
+.panelAgree {
+   margin-top: 30px;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.panelAgreeInput {
+   height: 24px;
+   width: 24px;
+   border-radius: 4px;
+   margin-right: 10px;
+}
+
+.panelAgreeInputPolicy {
+   color: $purple;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+.panelInputsRegistrationButton {
+   border: none;
+   font-size: 16px;
+   background-color: $purple;
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   height: 44px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: all 100ms ease-in;
+
+   line-height: 24px;
+
+   &:hover {
+      background-color: darken($purple, 5%);
+   }
+}

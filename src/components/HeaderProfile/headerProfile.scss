@@ -1,0 +1,21 @@
+@import '../../styles/vars.scss';
+
+.headerProfile {
+   display: block;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color: #000;
+}
+
+.headerRegistration {
+   font-size: 16px;
+   color: $purple;
+   font-family: 'Roboto', sans-serif;
+   padding-left: 3px;
+   padding-right: 3px;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}

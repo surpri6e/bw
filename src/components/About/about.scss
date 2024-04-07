@@ -1,0 +1,23 @@
+.about {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin-top: 38px;
+   margin-bottom: 24px;
+}
+
+.aboutTitle {
+   font-size: 40px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   padding-top: 4px;
+   padding-bottom: 4px;
+}
+
+.aboutSubtitle {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   line-height: 24px;
+}

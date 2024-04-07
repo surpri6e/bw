@@ -1,0 +1,13 @@
+.posts {
+   margin-top: 35px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@media (max-width: 500px) {
+   .posts {
+      justify-content: center;
+   }
+}
